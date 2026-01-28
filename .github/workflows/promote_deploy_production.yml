@@ -69,4 +69,5 @@ jobs:
           docker push "$DOCKERHUB_USERNAME/churn-backend:production"
 
       - name: Deploy to production (Simulated)
-        run: echo "Deploy step placeholder: run docker-compose on production host pulling the :production image."
+        run: |
+          echo "Deploy step placeholder: run docker-compose on production host pulling the :production image."

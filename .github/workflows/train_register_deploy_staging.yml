@@ -63,7 +63,8 @@ jobs:
           docker push "$DOCKERHUB_USERNAME/churn-backend:staging"
 
       - name: Deploy to staging (Simulated)
-        run: echo "Deploy step placeholder: run docker-compose on staging host pulling the :staging image."
+        run: |
+          echo "Deploy step placeholder: run docker-compose on staging host pulling the :staging image."
 
   staging_smoke_test:
     needs: deploy_staging
